@@ -1,0 +1,38 @@
+//Row Variables
+  //max-width of container
+  $row-max-width: 1200px;
+  $row-v-margin: 0;
+
+//Column Variables
+  //We're using a 9-column grid
+  $num-columns: 9;
+  //Side padding
+  $col-h-padding: 30px;
+  //Top/bottom padding
+  $col-v-padding: 30px;
+  //Side margins 
+  $col-h-margin: 0;
+  //Top/bottom margins
+  $col-v-margin: 0;
+
+//Flat UI Colors
+  @import 'ui_colors';
+
+//Colors
+  $body-bg-color: $flat-clouds-light;
+  $bg-color: $flat-clouds;
+  $border-color: $flat-clouds-dark;
+  $font-color: $flat-blue-3;
+  $shadow-color: $flat-gray-4;
+  $link-color: $flat-blue-2;
+  $link-color-hover: $flat-blue-1;
+
+
+
+//Header
+  $nav-height: 100px;
+
+//Base font-size 
+  $fs-small: 12px;
+  $fs-large: 21px;
+  $fs: 16px;

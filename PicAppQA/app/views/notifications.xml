@@ -1,0 +1,45 @@
+<Alloy>
+	<Window>
+		<View class="dataContainer">
+			<Require src="headerwin" id="header"/>
+			<TableView>
+				<TableViewRow height="Ti.UI.SIZE" backgroundColor="#FFF1D0">
+					<View height="Ti.UI.SIZE" layout="horizontal"  right="10" top="10" bottom="10">
+						<ImageView image="/images/la.png" class="noti-user"></ImageView>
+						<View height="Ti.UI.SIZE"   width="80%" layout="vertical" left="10" top="0">
+							<Label class="smallLabel" color="#000" left="0">LA DODGERS</Label>
+							<Label class="mediumLabel" left="0">Fans! Lock in tickets to the 4/21 against the Giants. 20% off if you buy during todays game!</Label>
+						</View>
+					</View>
+				</TableViewRow>
+				<TableViewRow height="Ti.UI.SIZE">
+					<View height="Ti.UI.SIZE" layout="horizontal" right="40" top="10" bottom="10">
+						<ImageView image="/images/f2.jpg" class="noti-user"></ImageView>
+						<View height="Ti.UI.SIZE"  width="60%" layout="vertical" left="10" right="40" top="0">
+							<View height="Ti.UI.SIZE" layout="horizontal">
+								<Label class="smallLabel" id="username">STACY MARTIN</Label>
+								<Label class="vsmallLabelSemi" id="notitime">30 MIN</Label>
+							</View>
+							<Label class="vsmallLabelSemi" id="notitype">LIKED YOUR PHOTO</Label>
+						</View>
+					</View>
+					<ImageView image="/images/sport1.jpg" height="70" right="10" top="10" bottom="10"></ImageView>
+				</TableViewRow>
+				<TableViewRow height="Ti.UI.SIZE">
+					<View height="Ti.UI.SIZE" layout="horizontal" right="40" top="10" bottom="10">
+						<ImageView image="/images/f3.jpg" class="noti-user"></ImageView>
+						<View height="Ti.UI.SIZE"  width="60%" layout="vertical" left="10" right="40" top="0">
+							<View height="Ti.UI.SIZE"  layout="horizontal">
+								<Label class="smallLabel" id="username">ALEXEY RYBIN</Label>
+								<Label class="vsmallLabelSemi" id="notitime">48 MIN AGO</Label>
+							</View>
+							<Label class="vsmallLabelSemi" id="notitype">COMMENTED ON YOUR PHOTO</Label>
+							<Label class="mediumLabel" id="notimsg">GREAT SHOT! LETS GO DODGERS!</Label>
+						</View>
+					</View>
+					<ImageView image="/images/sport2.jpg" height="70" right="10" top="10" bottom="10"></ImageView>
+				</TableViewRow>
+			</TableView>
+		</View>
+	</Window>
+</Alloy>

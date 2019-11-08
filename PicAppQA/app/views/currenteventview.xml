@@ -1,0 +1,31 @@
+<Alloy>
+	 <TableViewRow height="Ti.UI.SIZE" className="currenteventphotorow" >
+		<View class="current-event">
+			<View height="Ti.UI.SIZE" >
+				<View height="Ti.UI.SIZE" backgroundColor="#000">
+					<ImageView image="/images/sp1.jpg" width="Ti.UI.FILL" opacity="0.45" id="image"></ImageView>
+				</View>
+				<View height="Ti.UI.SIZE" layout="vertical">
+					<Label id="name" color="#fff">Dodgers vs Angels</Label>
+				</View>
+				<View class="usercount">
+					<ImageView image="/images/icons/user.png" height="20"></ImageView>
+					<Label class="livecount" id="usercount">4,242</Label>
+					<Label class="livecount" left="5dp">People Live</Label>
+				</View>
+			</View>
+			<View class="activeusers">
+				<View id="useravatars" width="0" height="0">
+					<ImageView  class="avatar" left="10"></ImageView>
+					<ImageView  class="avatar"></ImageView>
+					<ImageView  class="avatar"></ImageView>
+					<ImageView  class="avatar"></ImageView>
+				</View>
+				<View class="event-pics">
+					<ImageView image="/images/icons/camera.png" height="30" opacity="0.1" top="5"></ImageView>
+					<Label class="mediumLabel" top="10" id="photoscount" left="1">154</Label>
+				</View>
+			</View>
+		</View>
+	</TableViewRow>	
+</Alloy>

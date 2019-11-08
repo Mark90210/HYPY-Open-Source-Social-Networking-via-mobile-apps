@@ -1,0 +1,9 @@
+"Label":{
+	color:"#000"
+}
+".username":{
+	font:{
+		fontFamily:"OpenSans-Semibold",
+		fontSize:14,		
+	}
+}

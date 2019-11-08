@@ -1,0 +1,43 @@
+<Alloy>
+	<Window>
+		<View class="dataContainer">
+			<Require src="headerwin" id="header"/>
+			<View id="photoListContainer" class="scrollview" top="5"  bottom="100" >
+				<!--<View class="filtersharewrap">
+					<Button class="filtershare" title="Newest" backgroundColor="transparent"></Button>
+					<Button class="filtershare" color="#009FE8" title="Top"  backgroundColor="transparent"></Button>
+				</View>-->
+				<Label id="noPhotoMessage">There's nothing here yet, tap the camera below to add a photo.</Label>
+				<Widget id="ptr" src="nl.fokkezb.pullToRefresh" onRelease="myRefresher">
+					<TableView id="allphotos" class="scrollview" top="5" ></TableView>
+				</Widget>	
+				
+			</View>
+		</View>
+		<View height="50" bottom="0" backgroundColor="#25272A">
+			<View backgroundColor="#009FE8" width="100" height="50" onClick="getRegInput">
+				<ImageView image="/images/icons/camera-white.png" height="40"></ImageView>
+			</View>
+		</View>
+		<View layout="vertical" height="Ti.UI.FILL" backgroundColor="#50000000" visible="false" id="reginput" onClick="closeRegistrationModal">
+			<View class="codepopwrap" bubbleParent="false">
+	           <Label class="code-pop" id="regmsg">To post a photo, please create an account by entering your mobile number </Label>
+	           <TextField class="ph-fld" hintText="555-555-1212" id="regFld" keyboardType="Titanium.UI.KEYBOARD_PHONE_PAD" height="0"></TextField>
+	           <TextField class="ph-fld" hintText="1234" id="confirmcode" keyboardType="Titanium.UI.KEYBOARD_DECIMAL_PAD" height="0"></TextField>
+	           <Button class="btnlbl-smrad boldLabel" id="regBtn" onClick="submitNumber">Next</Button>
+	       </View>
+		</View>
+		<View layout="vertical" height="Ti.UI.FILL" backgroundColor="#50000000" visible="false" id="commentView" onClick="commentModal.hide" left="0" top="0">
+			<View class="codepopwrap" height="Ti.UI.SIZE" bubbleParent="false">
+				<View height="Ti.UI.SIZE" width="Ti.UI.FILL" class="lrspace tbspace" bottom="0">
+					<Label color="#fff" width="Ti.UI.SIZE" left="0">Add Comment</Label>
+	           		<ImageView image="/images/icons/close-icon.png" width="30" height="30" right="0" onClick="commentModal.close"></ImageView> 
+				</View>
+	           <TextArea value="Enter comment" id="commentInput" height="100" width="Ti.UI.FILL" class="lrspace tbspace"></TextArea>
+	           <View height="Ti.UI.SIZE" width="Ti.UI.SIZE" layout="horizontal" class="tbspace" bottom="20">
+	           		<Button class="btnlbl-smrad boldLabel" id="commentBtn" onClick="submitComment">Submit</Button>
+	           </View>
+	       </View>
+		</View>
+	</Window>
+</Alloy>

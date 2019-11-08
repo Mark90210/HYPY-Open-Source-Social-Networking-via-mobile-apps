@@ -1,0 +1,5 @@
+<Alloy>
+	<View class="dataContainer" top="0" backgroundColor="#979797" id="fevents">
+        <Label class="mediumLabel" top="30" onClick="pastevents">Finding events\n in you area..</Label>
+    </View>
+</Alloy>

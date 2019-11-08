@@ -1,0 +1,8 @@
+<Alloy>
+	<View class="dataContainer" layout="vertical">
+		<Widget id="ptr" src="nl.fokkezb.pullToRefresh" onRelease="myRefresher">
+		    <TableView class="scrollview" id="eventList" >
+			</TableView>
+		 </Widget>	
+	</View>
+</Alloy>

@@ -1,0 +1,11 @@
+
+"#photoListContainer" : {
+	visible: false
+}
+
+"#noPhotoMessage" : {
+	top: '150dp',
+	left: '40dp',
+	right: '40dp',
+	textAlign : Ti.UI.TEXT_ALIGNMENT_CENTER
+}

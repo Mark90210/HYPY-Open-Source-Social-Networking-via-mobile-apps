@@ -1,0 +1,25 @@
+"#notitime":{
+	left:0,
+	color:"#7E898C",
+	left:10,
+	top:0,
+	height:24
+}
+"#username":{
+	  color:"#000",
+	  top:0,
+	  left:0,
+	  height:24
+}
+"#notitype":{
+	left:0,
+	top:0,
+	color:"#7E898C"
+}
+"#notimsg":{
+	left:0,
+	top:3
+}
+"TableViewRow[platform=ios]":{
+	selectionStyle: Titanium.UI.iPhone.TableViewCellSelectionStyle.NONE
+}

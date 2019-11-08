@@ -1,0 +1,9 @@
+<Alloy>
+	<Window>
+		<View layout="vertical">
+			<Require src="header" id="header"/>			
+			<View id="primarycontainer"></View>			 
+        </View>
+        <Require src="slidemenu" id="slidemenu"/> 
+    </Window> 
+</Alloy> 

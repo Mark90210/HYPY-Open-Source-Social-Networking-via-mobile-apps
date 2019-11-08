@@ -1,0 +1,29 @@
+"Window":{
+	backgroundColor:"#FFF1D0"
+}
+"#events" : {
+	backgroundColor:"#FFF1D0"
+}
+"Label":{
+	color:"#fff"
+}
+".bottomview":{
+	height:"250",
+	backgroundColor:"#009FE8",
+	layout:"vertical",
+	bottom:0	 
+}
+
+"#imgview":{
+	layout:"horizontal",
+	height:Ti.UI.SIZE,
+	left:"10"	  
+}
+
+".cameraimg":{
+	layout:"horizontal",
+	width:Ti.UI.SIZE,
+	height:Ti.UI.SIZE,
+	right:"10"
+	 
+}

@@ -1,0 +1,416 @@
+/*
+
+This is your global styles file. Selectors and rules you define
+here will be applied throughout your app. However, these rules
+have the lowest priority of any style settings.
+
+For more information, see the "Style Priorities" section of
+http://docs.appcelerator.com/titanium/latest/#!/guide/Alloy_Styles_and_Themes
+
+For example, the following would apply to all labels, windows,
+and text fields (depending on platform) in your app unless you
+overrode the settings with other TSS, XML, or JS settings:
+
+'Label[platform=android]': {
+	color: '#000' // all platforms except Android default to black
+}
+
+'Window': {
+	backgroundColor: '#fff' // white background instead of default transparent
+}
+
+'TextField[platform=android]': {
+	height: Ti.UI.SIZE //
+}
+
+*/
+"Window":{
+	backgroundColor:"#E5E5E5"
+}
+"View":{
+	height:Ti.UI.SIZE
+}
+"TextField":{
+	color:"#535353"
+}
+".blockLbl":{
+	width:Ti.UI.FILL,
+	height:Ti.UI.FILL
+}
+"TableViewRow[platform=ios]":{	
+	selectionStyle:"Titanium.UI.iOS.TableViewCellSelectionStyle.NONE"
+	
+}
+/*"#mainTopBar[platform=ios]":{	
+	width: Ti.UI.FILL,
+	height: "50dp",	
+	backgroundColor: "#009FE8" 
+	
+}
+"#mainTopBar[platform=android]":{
+	width: Ti.UI.FILL,
+	height: "50dp",
+    backgroundColor: "#009FE8"	 
+}
+
+"#mainView":{
+	layout: 'vertical',
+	backgroundColor: "#E8E8E8"
+	
+}
+"#mainTopLeftArea":{
+	width: '83%',
+	height: "50dp",
+	left:'0',
+	layout:"horizontal"
+}
+".viewSep":{
+	height:"1",
+	width:Ti.UI.FILL,
+	backgroundColor:"#33399E"
+}
+"#pageheaderlogo":{
+	height:"48dp",
+	top:"2dp",
+	zIndex:1,
+	left:"5dp"
+}
+".pageheaderlefticon":{
+	height:"48dp",
+	top:"2dp",
+	zIndex:1,
+	left:"0"
+}
+".headerLbl":{
+	textAlign:"center",
+	height: "60dp",
+	color:"#fff",
+	font:{fontSize:"16dp",fontWeight:"bold"}
+}
+*/
+".scrollview":{
+	layout: "vertical",
+	height:Ti.UI.FILL,
+	width:Ti.UI.FILL,
+	showVerticalScrollIndicator: "false",
+	showHorizontalScrollIndicator: "false",
+	contentHeight:Ti.UI.SIZE,
+	contentWidth:Ti.UI.FILL
+}
+"Label":{
+	height:Ti.UI.SIZE,
+	font:{
+		fontFamily:"OpenSans-Semibold",
+		fontSize:"16",		
+	},
+	color:"#8B8B8B" 
+}
+".bigLabel":{
+	font:{
+		fontSize:"20",		
+	}
+}
+".bigLabelLight":{
+	font:{
+		fontFamily:"OpenSans-Light",
+		fontSize:30,		
+	}
+}
+
+".mediumLabel":{
+	font:{
+		fontSize:"15",		
+	},
+	color:"#646464"
+}
+".mediumLabelLight":{
+	font:{
+		fontFamily:"OpenSans-Light",
+		fontSize:16,		
+	}
+}
+".smallLabel":{
+	font:{
+		fontSize:"12",		
+	},
+	color:"#777"
+}
+".smallLabelLight":{
+	font:{
+		fontFamily:"OpenSans-Light",
+		fontSize:"12",		
+	}
+}
+".vsmallLabelLight":{
+	font:{
+		fontFamily:"OpenSans-Light",
+		fontSize:"10",		
+	}
+}
+".vsmallLabelSemi":{
+	font:{
+		fontSize:"10"		
+	}
+}
+".boldLabel":{
+	font:{
+		fontFamily:"OpenSans-Bold",
+		fontSize:16,
+		fontWeight:"bold" 
+	},
+	
+}
+".boldfont":{
+	font:{
+		fontFamily:"OpenSans-Bold",
+		fontSize:18,
+		fontWeight:"bold"		
+	}
+}
+".editLabel":{
+	font:{
+		fontSize:"16",
+		fontWieight:"bold"		
+	},
+	color:"#646464"
+}
+
+".lrspace":{
+	left:"10",
+	right:"10"
+}
+".tbspace":{
+	top:"10",
+	bottom:"10"
+}
+".dataContainer":{
+	layout:"vertical",
+	height:Ti.UI.FILL
+}
+".btnlbl":{
+	backgroundColor:"#F0C808" ,
+	color:"#fff",
+	borderRadius:"20",
+	height:"40",
+	width:"200"
+}
+".btnlbl-smrad":{
+	backgroundColor:"#F0C808" ,
+	color:"#fff",
+	borderRadius:"5",
+	height:"40",
+	width:"100"
+}
+".imgSep":{
+	backgroundColor:"#686868",
+	width:Ti.UI.FILL,
+	height:1	
+}
+".imgSepBlack":{
+	backgroundColor:"#000",
+	width:Ti.UI.FILL,
+	height:4	
+}
+/* Events */
+".current-event":{
+	 height:Ti.UI.SIZE,
+	 layout:"vertical"
+}
+".livecount":{
+	font:{
+		fontFamily:"OpenSans-Semibold",
+		fontSize:14 
+	},
+	color:"#F0C808"
+}
+".activeusers":{
+	height:Ti.UI.SIZE,
+	backgroundColor:"#fff"	
+}
+"#useravatars":{
+	height:Ti.UI.SIZE,
+	layout:"horizontal",
+	top:5,
+	bottom:5
+}
+".avatar":{
+	height:36,
+	width:36,
+	borderRadius:18,
+	left:5,
+	borderColor:"#A0A0A0",
+	borderWidth:1
+}
+".event-pics":{
+	height:36,
+	width:Ti.UI.SIZE,
+	layout:"horizontal",
+	right:10,
+	top:5,
+	bottom:5
+}
+".past-events":{
+	width:"100%",
+	height:Ti.UI.SIZE
+}
+"#pastEvtImg":{
+	width:Ti.UI.FILL
+}
+".usercount":{
+	 layout:"horizontal",
+	 width:Ti.UI.SIZE,
+	 height:Ti.UI.SIZE,
+	 bottom:20
+}
+
+/* Register */
+".filtersharewrap":{
+	height:Ti.UI.SIZE,	
+	layout:"horizontal",
+	backgroundColor:"#FFF1D0"
+}
+".filtershare":{
+	width:"49.5%",
+	height:40,
+	textAlign:"center",
+	color:"#000"
+}
+/* Post */
+".post":{
+	layout:"vertical",
+	bottom:10,
+	height:Ti.UI.SIZE,
+	backgroundColor:"#fff"
+}
+".post-hdr":{
+	width:"49.5%",
+	height:Ti.UI.SIZE,
+	top:10,
+	bottom:10
+}
+".infowrap":{
+	layout:"horizontal",
+	width:Ti.UI.SIZE,
+	height:Ti.UI.SIZE
+}
+".code-pop":{
+	color:"#fff",
+	textAlign:"center",
+	left:25,
+	top:30,
+	right:25
+}
+".ph-fld":{
+	width:"85%",
+	backgroundColor:"#fff",
+	borderRadius:5,
+	borderColor:"#6C6C6C",
+	borderWidth:2,
+	top:20,
+	font:{fontSize:18,fontWeight:"bold"},
+	paddingLeft:10
+}
+".codepopwrap":{
+	 height:250,
+	 backgroundColor:"#009FE8",
+	 width:"96%",
+	 borderRadius:5,
+	 layout:"vertical",
+	 top:100
+}
+".codepopwrap[formFactor=tablet]":{
+	 width:400
+}
+/* Profile */
+".profile-pic":{
+	height:120,
+	top:10,
+	borderRadius:60,
+	borderColor:"#A0A0A0",
+	borderWidth:1
+}
+".profile-pic2":{
+	height:140,
+	top:10,
+	borderRadius:70,
+	/*borderColor:"#A0A0A0",
+	borderWidth:0*/
+}
+/* Slider Menu */
+"#slidemenu":{
+	width:"100%", 
+	height:Ti.UI.FILL,
+	backgroundColor:"#01fff",
+	left:"-100%", 
+	layout:"vertical" 
+}
+".menulist":{
+	 layout:"vertical",
+	 top:0,
+	 left:0,
+	 backgroundColor:"#FEF1D0",
+	 width:"75%",
+	 height:Ti.UI.FILL
+}
+".menulist[platform=ios formFactor=tablet]":{
+	 layout:"vertical",
+	 top:0,
+	 left:0,
+	 backgroundColor:"#FEF1D0",
+	 width:350
+}
+"#primarycontainer":{
+	height:Ti.UI.FILL,
+	width:Ti.UI.FILL,
+	layout:"vertical"
+}
+".hdr-menu-icon":{
+	height:30
+}
+".hdr-menu-wrap":{
+	height:50,
+	width:50
+}
+"#mainView":{
+	layout: 'vertical',
+	backgroundColor: '#009FE8'
+}
+
+"#mainTopBar[platform=ios]":{
+	width: Ti.UI.FILL,
+	height: 50,
+	top:20,
+	backgroundColor: '#009FE8'
+}
+"#mainTopBar[platform=android]":{
+	width: Ti.UI.FILL,
+	height: 50,
+	backgroundColor: '#009FE8'
+}
+".win-hdr-title":{
+	font:{
+		fontFamily:"OpenSans-Semibold",
+		fontSize:18 
+	},
+	color:"#fff",
+	width:"75%",
+	textAlign:"center"
+}
+".menuTable1":{
+	backgroundColor:"transparent"
+}
+".tableRow":{
+	height: 60
+}
+".tableRow[platform=ios]":{
+	selectionStyle: Titanium.UI.iPhone.TableViewCellSelectionStyle.NONE
+}
+
+/* Notifications*/
+".noti-user":{
+	width:40,
+	left:10,
+	top:0,
+	borderRadius:20 
+}
+ 

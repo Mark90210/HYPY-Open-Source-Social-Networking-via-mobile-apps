@@ -1,0 +1,45 @@
+<Alloy>
+	<Window>
+		<View class="dataContainer" backgroundColor="#fff">
+			<Require src="headerwin" id="header"/>
+			<ScrollView class="scrollview">
+			<View layout="vertical">			    
+				<ImageView image="/images/f2.jpg" class="profile-pic" id="profile_image"></ImageView>
+				<Label  class="bigLabelLight" color="#656565" top="10" id="username"></Label>
+				<View height="Ti.UI.SIZE" top="5" bottom="10">
+					<View layout="horizontal" height="Ti.UI.SIZE" width="Ti.UI.SIZE">
+						<ImageView image="/images/icons/location.png" height="15" right="4" opacity="0.3"></ImageView>
+						<Label class="smallLabelLight" id="location" color="#656565"></Label>
+					</View>
+				</View> 
+				<Label  class="mediumLabelLight" id="bio"></Label>
+				<Button class="btnlbl-smrad boldLabel" bottom="20" top="20" onClick="editProfile">Edit</Button>
+			</View>
+			
+				<View class="past-events">
+					<View height="Ti.UI.SIZE" backgroundColor="#000">
+						<ImageView image="/images/sp2.jpg" id="pastEvtImg"></ImageView>
+					</View>
+					<Label color="#fff">Crossfit Games</Label>
+					<View class="usercount">
+						<ImageView image="/images/icons/user.png" height="20"></ImageView>
+						<Label class="livecount">1,298</Label>
+						<Label class="livecount" left="5dp">Attendees</Label>
+					</View>
+				</View>
+				<View class="imgSepBlack"/>
+				<View class="past-events">
+					<View height="Ti.UI.SIZE" backgroundColor="#000">
+						<ImageView image="/images/sp3.jpg" id="pastEvtImg"></ImageView>
+					</View>
+					<Label color="#fff">Trojans VS Wildcats</Label>
+					<View class="usercount">
+						<ImageView image="/images/icons/user.png" height="20"></ImageView>
+						<Label class="livecount">5,145</Label>
+						<Label class="livecount" left="5dp">Attendees</Label>
+					</View>
+				</View>
+			</ScrollView>
+		</View>
+	</Window>
+</Alloy>

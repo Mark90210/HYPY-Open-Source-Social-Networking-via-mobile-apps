@@ -1,0 +1,7 @@
+Hash: 27394d233c82474b831c
+Version: webpack 1.15.0
+Time: 15908ms
+      Asset    Size  Chunks             Chunk Names
+hypy.min.js  5.8 MB       0  [emitted]  main
+   [0] multi main 28 bytes {0} [built]
+    + 605 hidden modules

@@ -1,0 +1,39 @@
+".userinfo":{
+	font:{
+		fontFamily:"OpenSans-Light",
+		fontSize:16		
+	},
+	color:"#000",
+	left:0,
+	height:40,
+	backgroundColor:"#fff",
+	width:Ti.UI.FILL,
+	right:15,
+	paddingLeft:10
+}
+"ImageView":{
+	height:40
+}
+".fld-wrap":{
+	layout:"horizontal",
+	height:Ti.UI.SIZE,
+	top:10,
+	left:10,
+	bottom:10
+}
+".savechanges":{
+	width:200,
+	bottom:40,
+	backgroundColor:"#F0C808" ,
+	color:"#fff",
+	borderRadius:"5",
+	height:"40",	
+}
+".editLabel":{
+	color:"#BFBFBF",
+	top:30,
+	left:20,
+	bottom:5,
+	textAlign:"left",
+	width:Ti.UI.FILL
+}

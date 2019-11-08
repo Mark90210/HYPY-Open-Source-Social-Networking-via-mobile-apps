@@ -1,0 +1,324 @@
+//UTILITY CLASSES
+
+.clearfix {
+  
+   &:after {
+      content:"";
+      display:table;
+      clear:both;
+  }
+  
+}
+
+.no-border {
+  
+  border: none !important;
+  
+}
+
+.txt-center {
+  
+  text-align: center;
+  
+}
+
+.txt-right {
+  
+  text-align: right;
+  
+}
+
+.txt-normal {
+  
+  font-size: $fs !important;
+  
+}
+
+
+.txt-large {
+  
+  font-size: $fs-large !important;
+  
+}
+
+.txt-small {
+  
+  font-size: $fs-small !important;
+  
+}
+
+.hidden {
+  
+  display: none;
+  
+}
+
+.inactive {
+  
+  opacity: 0.75;
+
+}
+
+
+// GRID SYSTEM
+
+#the-container {
+  
+  background-color: $bg-color;
+  box-shadow: 2px 2px 4px $shadow-color;
+  
+}
+
+.contain {
+
+  height: 100%;
+  border-bottom: 1px solid $border-color;
+  background: aliceblue;
+
+}
+
+.row {
+  
+  @extend .clearfix;
+  
+  width: 100%;
+  max-width: $row-max-width;
+  height: 100%;
+  
+  margin: $row-v-margin auto;
+  
+}
+
+%col {
+  
+  float: left;
+  padding: $col-v-padding $col-h-padding;
+  margin: $col-v-margin $col-h-margin;
+  box-sizing: border-box;
+  height: 100%;
+  overflow: scroll;
+  
+  border-left: 1px solid $border-color;
+  
+  &:first-child {
+    
+    border-left: 0;
+  
+  }
+  
+}
+
+//$num-columns controlled in vars.scss
+@include make-cols( $num-columns );
+
+//IMAGES
+
+img {
+    
+  max-width: 100%;
+
+  &.circle {
+    
+    border-radius: 100%;
+    
+  }
+  
+}
+
+//Handle menu
+body {
+  
+   #user-nav-menu {
+
+      position: absolute;
+      top: 62px;
+      right: 20px; //col-width-total( 2, $num-columns, 20px ); //this is because the team name is a col-2
+      overflow: hidden;
+      width: 150px;
+      padding: 10px;
+      background: aliceblue;
+      box-shadow: 2px 2px 4px $shadow-color;
+      z-index: 100;
+      text-align: left;
+
+    }
+    
+    .user-name .fa-caret-up, #user-nav-menu {
+      
+      display: none;
+      
+    }
+    
+    &.show-nav-menu {
+      
+      #user-nav-menu {
+      
+        display: block;
+
+      }
+      
+      .user-name .fa-caret-up {
+        
+        display: inline-block;
+        
+      }
+      
+      .user-name .fa-caret-down {
+        
+        display: none;
+        
+      }
+      
+    }
+  
+}
+
+//HEADER
+nav {
+  
+  position: relative;
+  box-sizing: border-box;
+  height: $nav-height;
+  
+  img, span, span.h3 {
+    
+    margin: 0;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: ( $nav-height - ( 2 * $col-v-padding ) );
+    
+  }
+  
+  .quick-nav {
+  
+  }
+  
+  .user-nav {
+    
+    overflow: hidden;
+    text-align: right;
+    padding: 10px;
+    font-weight: bold;
+    
+    img.user-avatar {
+        
+      height: ( $nav-height - ( 2 * $col-v-padding ) );
+      margin: 0 15px;
+      
+    }
+    
+      
+  }
+  
+  .team-nav {
+    overflow: hidden; 
+    padding: 20px;
+    float: left;
+    width: calc( 10% - 0px );
+    font-weight: bold;
+  }
+  
+  .team-nav-logo {
+    overflow: hidden; 
+    float: left;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+  }
+  
+}
+
+
+//MAIN CONTENT
+#content {
+  
+  height: 100vh;
+  overflow: hidden;
+  
+  &>div {
+    
+    height: 100%;
+    
+  }
+  
+}
+
+#app {
+  
+  height: calc( 100% - #{$nav-height} );
+  
+}
+
+//SCREEN 1
+//EVENTS
+.event {
+  
+  
+  
+}
+
+//BUTTONS
+
+//SCREEN 2
+//CONTENT FEED
+#content-feed {
+  
+  .content {
+    
+    margin: 10px 0;
+    
+    @extend .clearfix;
+    
+    img.user-avatar {
+      
+      width: 50px;
+      float: left;
+      margin-right: 15px;
+      
+    }
+    
+    .content-post {
+      
+      width: calc( 100% - 65px);
+      float: left;
+      
+    }
+  
+  }
+  
+} 
+
+#content-details {
+  
+  .content-user-details img.user-avatar {
+  
+    max-width: 150px;
+
+  }
+  
+  .event-comments .content-post {
+
+    border-left: 4px solid $border-color;
+    padding: 4px 0 4px 10px;
+    margin: 15px 0;
+    
+    p {
+    
+      margin: 5px 0;
+    
+    }
+    
+  }
+  
+}
+
+#content-create form {
+  
+  ul {
+    
+    list-style: none;
+    
+  }
+  
+}
+

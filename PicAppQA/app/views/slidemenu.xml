@@ -1,0 +1,31 @@
+<Alloy>
+	<View id="slidemenu">
+		<View class="menulist">
+			<View class="hdr-menu-wrap" right="0" id="backnav"><ImageView image="/images/icons/backic.png" class="hdr-menu-icon"></ImageView></View>
+			<View layout="vertical" top="25">
+				<ImageView image="/images/f2.jpg" class="profile-pic2" id="profile_image"></ImageView>
+				<Label  class="username" top="10" id="username"></Label>
+				<View height="Ti.UI.SIZE" top="0" bottom="10">
+					<View layout="horizontal" height="Ti.UI.SIZE" width="Ti.UI.SIZE">
+						<ImageView image="/images/icons/location.png" height="15" right="4" opacity="0.3"></ImageView>
+						<Label class="smallLabelLight" id="location" color="#656565"></Label>
+					</View>
+			</View>
+			</View>
+			<TableView maxrows="7" class="menuTable1" id="menuTable" separatorColor="transparent" bubbleParent="false">
+				<TableViewRow class="tableRow" id="myprofile" className="itemrow">
+					<Label class="bigLabelLight"  id="myprofilelbl" text="My Profile"></Label>
+				</TableViewRow>
+				<TableViewRow class="tableRow" id="myevents" className="itemrow">
+					<Label class="bigLabelLight" text="My Events"></Label>
+				</TableViewRow>
+				<!--<TableViewRow class="tableRow" id="notifications" className="itemrow">
+					<Label class="bigLabelLight" text="Notifications"></Label>
+				</TableViewRow>
+				<TableViewRow class="tableRow" id="settings" className="itemrow">
+					<Label class="bigLabelLight" text="Settings"></Label>
+			</TableViewRow> -->
+			</TableView>
+		</View>
+	</View>
+</Alloy>

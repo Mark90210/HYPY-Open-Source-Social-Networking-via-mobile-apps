@@ -1,0 +1,17 @@
+<Alloy>
+	<TableViewRow height="Ti.UI.SIZE" className="eventrow">
+		<View class="container">
+			<View class="past-events">
+				<View height="Ti.UI.SIZE" backgroundColor="#000">
+					<ImageView image="/images/sp3.jpg" id="image"></ImageView>
+				</View>
+				<Label color="#fff" id="name">Event Name</Label>
+				<View class="usercount">
+					<ImageView image="/images/icons/user.png" height="20"></ImageView>
+					<Label class="livecount" id="usercount">2,242</Label>
+					<Label class="livecount" left="5dp">Attendees</Label>
+				</View>
+			</View>
+		</View>
+	</TableViewRow>	
+</Alloy>

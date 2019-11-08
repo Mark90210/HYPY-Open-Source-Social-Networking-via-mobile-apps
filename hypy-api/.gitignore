@@ -1,0 +1,13 @@
+*.css.map
+*.sh
+*.dump
+.env
+.DS_Store
+.ruby-version
+config/database.yml
+**/.sass-cache
+**/.sass-cache/*
+**/node_modules
+**/node_modules/*
+**/npm-debug.log
+**/npm-debug.log/*

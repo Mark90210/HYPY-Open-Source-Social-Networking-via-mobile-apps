@@ -1,0 +1,131 @@
+body {
+  
+  background: $body-bg-color;
+  
+  font-size: $fs;
+  font-family: Arial, sans-serif;
+  color: $font-color;
+  
+}
+
+a {
+  
+ &, &:link, &:visited, &:active {
+   
+   color: $link-color;
+   text-decoration: none;
+   
+  }
+  
+  &:hover {
+    
+    color: $link-color-hover;
+    
+  }
+  
+  &.color-red {
+    
+    &, &:link, &:visited, &:active {
+   
+      color: $flat-orange-3;
+      text-decoration: none;
+   
+    }
+  
+    &:hover {
+
+      color: darken( $flat-orange-3, 10% );
+
+    }
+    
+  }
+    
+}
+
+//HEADING ELEMENTS
+h1, h2, h3, h4, h5,
+.h1, .h2, .h3, .h4, .h5 {
+  
+  display: block;
+  margin: 15px 0;
+  font-weight: bold;
+  
+}
+
+//Using David Kadavy's scale 9, 12, 16, 21, 28, 37, 50, 67, 83
+h1, .h1 {
+  
+  font-size: 50px;
+
+}
+
+h2, .h2 {
+  
+  font-size: 37px;
+
+}
+
+h3, .h3 {
+  
+  font-size: 28px;
+
+}
+
+
+h4, .h4 {
+  
+  font-size: 21px;
+
+}
+
+h5, .h5 {
+  
+  font-size: 16px;
+  
+}
+
+//Form Elements
+input:not([type="submit"]):not([type="checkbox"]),
+input[type="text"],
+input[type="password"],
+textarea {
+  
+  background: $white;
+  line-height: 1.5em;
+  padding: 10px 10px;
+  color: $font-color;
+  border: 1px solid $border-color;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+  box-shadow: inset 0px 1px 2px $shadow-color;
+  margin: 10px auto;
+  
+}
+
+//BUTTONS
+button, .btn, input[type="submit"] {
+  
+  border: none;
+  background-color: $flat-gray-2;
+  border-radius: 5px;
+  
+  color: $flat-blue-4;
+  font-weight: bold;
+  
+  padding: 10px 15px;
+  margin: 20px 0;
+  text-align: center;
+  
+  min-width: 150px;
+  box-shadow: 2px 2px 2px $flat-gray-4;
+  
+}
+
+.fa-sm {
+  
+  font-size: .65em;
+  vertical-align: middle;
+  
+}

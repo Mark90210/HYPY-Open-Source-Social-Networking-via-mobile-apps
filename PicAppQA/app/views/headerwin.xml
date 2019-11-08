@@ -1,0 +1,9 @@
+<Alloy>
+	<View id="mainView">
+        <View id="mainTopBar">
+        	<View class="hdr-menu-wrap" left="0" id="backnav" onClick="Alloy.Globals.closeWin"><ImageView image="/images/icons/backic.png" class="hdr-menu-icon"></ImageView></View>
+        	<Label class="win-hdr-title" id="headertitleWin"></Label>
+        	<!--<View class="hdr-menu-wrap" right="10" id="noti" onClick="Alloy.Globals.notiWin"><ImageView image="/images/icons/mailic.png" class="hdr-menu-icon"></ImageView></View> -->
+        </View>
+    </View>
+</Alloy>

@@ -1,0 +1,125 @@
+.tophead {
+  border:1px solid #000;
+}
+.logo {
+  text-align: center;;
+}
+.header-top {
+  border-bottom: 1px solid #000;
+    margin: 0 -15px;
+    padding: 0px 30px;
+    height: 32px;
+    line-height: 30px;
+}
+.flex {
+  display: flex;
+}
+.plus-icon {
+box-shadow: 3px 4px 1px rgba(160, 160, 160, 0.72);
+    padding: 11px 15px;
+    border-radius: 59px;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    display: block;
+    float: right;
+        margin-top: -10px;
+}
+.event-count {
+      text-align: center;
+    padding: 10px 15px;
+    overflow: hidden;
+}
+.event-count h3 {
+  margin: 0px 0 15px;
+}
+.user-select {
+  background: none;
+    border: none;
+    box-shadow: none;
+    width: 100%;
+}
+.user-select .btn-lg .caret {
+    border-width: 5px 5px 0;
+    border-bottom-width: 0;
+}
+.top-h-right .btn-group {
+  width: 100%;
+    float: right;
+}
+.user-select span {
+  float: right;
+}
+.user-select.btn .caret {
+    margin-left: 5px;
+    margin-top: 7px;
+}
+.tophead .open > .dropdown-menu {
+    display: block;
+    right: 0;
+    left: inherit;
+}
+.btn-default:active:hover,
+ .btn-default.active:hover,
+  .open > .dropdown-toggle.btn-default:hover,
+   .btn-default:active:focus, .btn-default.active:focus,
+    .open > .dropdown-toggle.btn-default:focus,
+     .btn-default:active.focus,
+      .btn-default.active.focus,
+       .open > .dropdown-toggle.btn-default.focus {
+          background: none;
+    border: none;
+    box-shadow: none;
+       }
+       .btn-default:hover,
+ .btn-default:hover {
+            background: none;
+    border: none;
+    box-shadow: none;
+ }
+ .panel-h-left,
+ .panel-h-middle,
+ .panel-h-right {
+  border: 1px solid #000;
+ }
+ .image-block {
+  border: 1px solid #000;
+    margin: 20px 10px;
+ }
+ .sub-header {
+     border-bottom: 1px solid #000;
+    display: flex;
+ }
+ .title-block, .date-block {
+  border-right: 1px solid #000;
+  float: left;
+ }
+ .color-block {
+  float: left;
+ }
+ .title-block {
+  width: 50%;
+ }
+ .date-block {
+  width: 30%;
+ }
+ .color-block {
+  width: 20%; 
+ }
+ .color, .desciption, .view-all {
+  border-bottom: 1px solid #000;
+ }
+ .view-all {
+  overflow: hidden;
+ }
+ .view-detail {
+  width: 80%;
+  float: left;;
+
+ }
+ .sub-title {
+padding: 20px;
+    border-bottom: 1px solid #000;
+    text-align: center;
+    font-size: 24px;
+ }

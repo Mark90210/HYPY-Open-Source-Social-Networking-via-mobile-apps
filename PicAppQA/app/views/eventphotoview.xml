@@ -1,0 +1,41 @@
+<Alloy>
+	<TableViewRow height="Ti.UI.SIZE" className="eventphotorow">
+		<View class="post">
+			<View  layout="horizontal">
+				<View class="post-hdr">
+					<View class="infowrap" left="10"> 
+						<ImageView image="/images/f1.jpg" class="avatar" id="useravatar"></ImageView>
+						<Label class="smallLabel" color="#125688" left="10" id="name">User Name</Label>
+					</View>
+				</View>
+				<View class="post-hdr" id="flagphotoview" >
+					<View class="infowrap" right="10" touchEnabled="false">
+						<Label class="smallLabel"  touchEnabled="false"></Label>
+						<ImageView image="/images/icons/flag.png" touchEnabled="false" height="30"></ImageView>
+					</View>
+				</View>
+			</View>
+			<View class="imgSep"></View>
+			<ImageView image="/images/pd1.jpg" width="Ti.UI.FILL" id="img"></ImageView>
+			<View class="imgSep"></View>
+			<View layout="horizontal" height="Ti.UI.SIZE" top="10" left="20">
+				<Label class="smallLabel" color="#125688" id="name2">April Smith</Label>
+				<Label class="smallLabel" left="10" id ="desc">We're here! Go Dodgers!!!!</Label>
+			</View>
+			<View  layout="horizontal" class="tbspace imagelayout" >
+				<View class="post-hdr" id="likeview">
+					<View class="infowrap" left="20" touchEnabled="false">
+						<ImageView image="/images/icons/like.png" height="20" right="10"  touchEnabled="false"  id="likeimg"></ImageView>
+						<Label class="smallLabel" touchEnabled="false">Like</Label>
+					</View>
+				</View>
+				<View class="post-hdr">
+					<View class="infowrap" right="20" id="viewcomment">
+						<ImageView image="/images/icons/comment.png" height="20" right="10" opacity="0.2" touchEnabled="false"></ImageView>
+						<Label class="smallLabel" touchEnabled="false">Comment</Label>
+					</View>
+				</View>
+			</View>
+		</View>
+	</TableViewRow>		
+</Alloy>

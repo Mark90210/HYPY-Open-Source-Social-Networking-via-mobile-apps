@@ -1,0 +1,56 @@
+//calculate the total width taken up by x columns
+@function col-width-total($units, $base, $add) {
+  
+  //Set the width
+  $percent-width: ( $units * ( 100% / $base ) );
+  $margin-size: ( 2 * $col-h-margin );
+  
+  @if $margin-size == 0 {
+    $margin-size: 0px;
+  }
+   
+  @if $add != "" && $add != 0 {
+  
+    @return calc( #{$percent-width} + #{$margin-size} + #{$add} )
+    
+  } @else {
+  
+    @return calc( #{$percent-width} + #{$margin-size} );
+
+  }
+      
+}
+
+
+//Creates the styles for a single column of $units/$base width
+@mixin col-base($units, $base) {
+  
+  //Include the basic column styles
+  @extend %col; 
+  
+  //Set the width
+  $percent-width: ( $units * ( 100% / $base ) );
+  $margin-size: ( 2 * $col-h-margin );
+  
+  @if $margin-size == 0 {
+    $margin-size: 0px;
+  }
+  
+  width: calc( #{$percent-width} - #{$margin-size} );
+      
+}
+
+//Creates all of our column classes
+@mixin make-cols( $num-columns ) {
+  
+  @for $i from 1 through $num-columns {
+    
+    .col-#{$i} { 
+       
+      @include col-base( $i, $num-columns );
+      
+    }
+  
+  }
+  
+}

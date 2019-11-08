@@ -1,0 +1,11 @@
+<Alloy> 
+	<Window>
+	    <ImageView image="/images/launch.jpg" width="Ti.UI.FILL"  top="20"></ImageView>
+        <View class="bottomview">            
+            <Label class="boldfont" top="25" bottom="25">HYPY</Label>
+            <Label>Fun photos sharing for events.</Label>
+            <Label bottom="25">Win cool prizes!</Label>
+            <Button class="btnlbl boldLabel" onClick="findevents">Lets Do It!</Button>
+        </View>
+	</Window>
+</Alloy>

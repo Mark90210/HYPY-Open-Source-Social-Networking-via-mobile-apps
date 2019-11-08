@@ -1,0 +1,46 @@
+<Alloy>
+	<Window>
+			<View class="dataContainer">
+				<!--<Require src="headerwin" id="header"/>-->
+				<View id="mainView">
+			        <View id="mainTopBar">
+			        	<View class="hdr-menu-wrap" left="0" id="backnav" onClick="closeWindow"><ImageView image="/images/icons/backic.png" class="hdr-menu-icon"></ImageView></View>
+			        	<Label class="win-hdr-title" id="headertitleWin"></Label>
+			        </View>
+			    </View>
+				<ScrollView class="scrollview" backgroundColor="#fff">
+				<View backgroundColor="#F9F9F9" layout="vertical">
+					<ImageView image="/images/f2.jpg" class="profile-pic" id="profile_image"></ImageView>
+					<View class="btnlbl-smrad boldLabel" bottom="20" top="20" onClick="getProfilePic">
+						<ImageView image="/images/icons/camera-white.png" height="30"></ImageView>
+					</View>
+					<Label class="editLabel">PROFILE DETAILS</Label>
+				</View>
+				<View layout="vertical" height="Ti.UI.SIZE">
+					
+					<View class="fld-wrap">
+						<ImageView image="/images/icons/useric.png" opacity="0.3" height="30"></ImageView>
+						<TextField class="userinfo" id="firstname" borderColor="#BFBFBF"></TextField>
+					</View>
+					<View class="fld-wrap">
+						<ImageView image="/images/icons/useric.png" opacity="0.3" height="30"></ImageView>
+						<TextField class="userinfo" id="lastname" borderColor="#BFBFBF"></TextField>
+					</View>
+					<View class="fld-wrap">
+						<ImageView image="/images/icons/call.png" opacity="0.3" height="30"></ImageView>
+						<TextField class="userinfo" id="phone" editable="false"></TextField>
+					</View>
+					<View class="fld-wrap">
+						<ImageView image="/images/icons/location.png" opacity="0.3" height="30"></ImageView> 
+						<TextField class="userinfo" value="" id="location" editable="false"></TextField>
+					</View>
+					<View class="fld-wrap">
+						<ImageView image="/images/icons/pad.png" opacity="0.3" height="30"></ImageView>
+						<TextField class="userinfo" id="bio" borderColor="#BFBFBF"></TextField>
+					</View>
+					<Button class="boldLabel tbspace savechanges" onClick="saveProfile">Save Changes</Button>
+				</View>
+				</ScrollView>
+			</View>		
+	</Window>
+</Alloy>

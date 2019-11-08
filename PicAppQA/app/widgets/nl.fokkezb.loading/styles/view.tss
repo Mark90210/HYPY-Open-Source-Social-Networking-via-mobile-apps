@@ -1,0 +1,91 @@
+".loadingMask": {
+  backgroundColor: "#50000000",
+  visible: false,
+  height:Ti.UI.FILL,
+  zIndex:99999
+}
+
+".loadingOuter": {
+  width: Ti.UI.SIZE,
+  height: Ti.UI.SIZE,
+  
+  borderRadius: 10,
+  //backgroundColor: "#C000",
+  backgroundColor:"transparent"
+}
+
+".loadingInner": {
+  top: '20dp',
+  right: '20dp',
+  bottom: '20dp',
+  left: '20dp',
+  
+  width: Ti.UI.SIZE,
+  height: Ti.UI.SIZE,
+  
+  layout: 'vertical'
+}
+
+".loadingIndicator": {
+  top: '0dp',
+  style: Ti.UI.ActivityIndicatorStyle.BIG
+}
+
+".loadingIndicator[platform=ios]": {
+  style: Ti.UI.ActivityIndicatorStyle.BIG
+}
+
+".loadingImages": {
+  top: '0dp',
+  duration:"50",
+  images: [
+    	"/images/nl.fokkezb.loading/01.png",
+        "/images/nl.fokkezb.loading/02.png", "/images/nl.fokkezb.loading/03.png",
+        "/images/nl.fokkezb.loading/04.png", "/images/nl.fokkezb.loading/05.png",
+        "/images/nl.fokkezb.loading/06.png", "/images/nl.fokkezb.loading/07.png",
+        "/images/nl.fokkezb.loading/08.png", "/images/nl.fokkezb.loading/09.png",
+        "/images/nl.fokkezb.loading/10.png"
+  ]
+}
+"#pb": {
+	top:-15,
+    width: "90%",
+    min: 0,
+    max: 1,
+    value: 0,
+    color: '#000',
+    height:'40',
+    font: {fontSize:14, fontWeight:'bold'}
+}
+"#pbHolder":{
+	width: 250,
+	top: 25,
+	height:60,
+	backgroundColor:"#dcdcdc",
+	borderRadius:5,
+	layout:"vertical"
+}
+"#uploadpercentage":{
+	height:24,
+	top:5,
+  color: '#000',
+  width:Ti.UI.FILL,
+  textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+  font: {
+    fontSize: '14dp'
+  },
+}
+".loadingMessage": {
+  top: '0',
+  width: Ti.UI.SIZE,
+  height: 1,
+
+  text: L('loadingMessage', 'Loading..'),
+  
+  color: '#fff',
+  textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+  font: {
+    fontSize: '16dp'
+  },
+  visible:false
+}

@@ -1,0 +1,19 @@
+.moderation-tile {
+	position: relative;
+	width: 360px;
+	margin: 16px auto;
+}
+.moderation-tile img {
+	width: 100%;
+}
+.moderation-tile a.reject {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 4px 8px;
+	background: rgba(255, 50, 0, .7);
+	opacity: 0;
+}
+.moderation-tile:hover a.reject {
+	opacity: 1;
+}
